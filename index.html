@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <section class="d-auto">
+        <div class="glass-container">
+            <div id="LoginPage" class="login-box d-auto">
+                <h2>Login</h2>
+                <div class="form">
+    
+                    <input type="text" id="userNameLogin" name="userName" required placeholder="Emal">
+                    
+                    <input type="password" id="passwordLogin" name="password" required placeholder="Password">
+                    <div id="alert" class="alert alert-danger my-3 d-none" role="alert">
+                        Check You Email and Password
+                    </div>
+    
+                    <p>Don't have an account? <a href="#" id="register">Register</a></p>
+                    
+                    <button type="submit" id="loginbtn">Login</button>
+    
+                    
+                    </div>
+            </div>
+    
+            <div id="registerPage" class="login-box d-none">
+                <h2>Register</h2>
+                <div class="form">
+    
+                    <input type="text" id="userNameRegister" name="userName" required placeholder="User Name">
+    
+                    <input type="email" id="userEmailRegister" name="useremail" required placeholder="user Email">
+                    
+                    <input type="password" id="passwordRegister" name="password" required placeholder="Password">
+
+                    <div id="alertRegister" class="alert alert-danger my-3 d-none" role="alert">
+                        The Email or Password already exists 
+                    </div>
+    
+                    <p>Don't have an account? <a href="#" id="Login">Login</a></p>
+            
+                    <button type="submit" id="signUp">Sign up</button>
+    
+                    
+                </div>
+            </div>
+            
+        </div> 
+    </section>
+
+    <main class="d-none">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+            <a class="navbar-brand">Login</a>
+
+                <button class="btn btn-danger" type="submit" id="logOut">LogOut</button>
+            
+            </div>
+        </nav>
+
+        <section id="homePage" class="d-flex align-items-center justify-content-center">
+        
+        </section>
+    </main>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
